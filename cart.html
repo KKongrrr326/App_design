@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>:: Bitpos ::</title>
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Roboto:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <!-- css -->
+    <link rel="stylesheet" href="css/default.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- jQuery CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- js -->
+    <script src="js/main.js"></script>
+</head>
+
+<body>
+    <div class="wrap bg">
+        <header class="sub cart-head">
+            <h1>장바구니</h1>
+            <button class="hide-btn" onclick="location.href='shopping_mall.html'"><img src="img/pg_hide_btn.png" alt=""></button>
+        </header>
+        <div id="cart">
+            <div class="sel-area">
+                <div class="all-sel">
+                    <input type="checkbox" name="all-check" id="all-check"><label for="all-check"><p>전체선택</p></label>
+                    <p class="item-unit">( <span>0</span>개 / 1개 )</p>
+                </div> <!-- end all-sel -->
+                <div class="delete-btn">
+                    <input type="button" value="삭제">
+                </div> <!-- end delete-btn -->
+            </div> <!-- end sel-area -->
+            <div class="in-cart">
+                <div class="item-box">
+                    <div class="ch-box"><input type="checkbox" name="chk" id="chk"><label for="chk"></label></div>
+                    <div class="item-img"><img src="img/item_img.png" alt=""></div>
+                    <div class="item-info">
+                        <p class="item-nm">비트포스 코인(BPC)</p>
+                        <ul class="option">
+                            <li>비트포스 코인(BPC)</li>
+                            <li class="bar">|</li>
+                            <li>수량 : 1개(+0)</li>
+                        </ul>
+                        <div class="add-op">
+                            <div class="unit-box">
+                                <button class="minus-btn"><img src="img/minus_btn.png" alt=""></button>
+                                <span>1</span>
+                                <button class="plus-btn"><img src="img/plus_btn.png" alt=""></button>
+                            </div> <!-- end unit-box -->
+                            <div class="pr-area">
+                                <p>10,000 원</p>
+                                <div class="sel-delete"><img src="img/delete_btn.png" alt=""></div>
+                            </div> <!-- end pr-area -->
+                        </div> <!-- end add-option -->
+                    </div> <!-- end item-info -->
+                </div> <!-- end item-box -->
+                <div class="item-box">
+                    <div class="ch-box"><input type="checkbox" name="chk2" id="chk2"><label for="chk2"></label></div>
+                    <div class="item-img"><img src="img/item_img.png" alt=""></div>
+                    <div class="item-info">
+                        <p class="item-nm">비트포스 코인(BPC)</p>
+                        <ul class="option">
+                            <li>비트포스 코인(BPC)</li>
+                            <li class="bar">|</li>
+                            <li>수량 : 1개(+0)</li>
+                        </ul>
+                        <div class="add-op">
+                            <div class="unit-box">
+                                <button class="minus-btn"><img src="img/minus_btn.png" alt=""></button>
+                                <span>1</span>
+                                <button class="plus-btn"><img src="img/plus_btn.png" alt=""></button>
+                            </div> <!-- end unit-box -->
+                            <div class="pr-area">
+                                <p>10,000 원</p>
+                                <div class="sel-delete"><img src="img/delete_btn.png" alt=""></div>
+                            </div> <!-- end pr-area -->
+                        </div> <!-- end add-option -->
+                    </div> <!-- end item-info -->
+                </div> <!-- end item-box -->
+            </div> <!-- end in-cart -->
+            <div class="receipt">
+                <div class="pay-list">
+                    <ul>
+                        <li>상품금액</li>
+                        <li>10,000원</li>
+                    </ul>
+                    <ul>
+                        <li>배송비</li>
+                        <li>무료배송</li>
+                    </ul>
+                </div> <!-- end pay-list -->
+                <div class="total-pr">
+                    <ul>
+                        <li>총 결제금액</li>
+                        <li>10,000 원</li>
+                    </ul>
+                </div>
+            </div> <!-- end receipt -->
+            <div class="cm-btn">
+                <input type="button" class="width-100" value="결제하기">
+            </div>
+        </div> <!-- end cart -->
+        <footer>
+            <ul>
+                <li><a href="shopping_mall.html"><img src="img/mall_icon.png" alt=""></a></li>
+                <li><a href="wallet.html"><img src="img/wallet_icon.png" alt=""></a></li>
+                <li class="home-menu"><a href="index.html"><img src="img/home_icon.png" alt=""></a></li>
+                <li><a href="charge_shop.html"><img src="img/charge_icon.png" alt=""></a></li>
+                <li><a href="mypage.html"><img src="img/mypage_icon.png" alt=""></a></li>
+            </ul>
+        </footer>
+    </div> <!-- end wrap -->
+</body>
+
+</html>

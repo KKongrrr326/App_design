@@ -20,6 +20,13 @@
     <script src="js/main.js"></script>
     <script>
         jQuery(document).ready(function ($) {
+            
+            // slide search-box 
+            $("header.sub .search").click(function () {
+                $("header.sub .sch-box").slideToggle(300);
+            });
+            
+            // option-popup 
             $(".fixed-buy-btn .ot-popup .hide-btn").click(function () {
                 $(".fixed-buy-btn .ot-popup").addClass("hide");
             });
@@ -31,14 +38,18 @@
 </head>
 
 <body>
-    <div class="wrap">
+    <div class="wrap bg">
         <header class="sub">
             <div class="fixed-head">
                 <a class="back" href="shopping_mall.html"><img src="img/back_icon.png" alt=""></a>
                 <a class="logo" href="index.html"><img src="img/logo_reverse.png" alt=""></a>
                 <a class="search" href="#"><img src="img/search_icon.png" alt=""></a>
-                <a class="cart" href="#"><img src="img/cart_icon.png" alt=""></a>
+                <a class="cart" href="cart.html"><img src="img/cart_icon.png" alt=""></a>
             </div> <!-- end fixed-head -->
+            <div class="sch-box">
+                <input type="text" class="width-100" placeholder="찾으시는 상품을 입력해주세요.">
+                <a class="sch-icon" href="#"><img src="img/sch_box_icon.png" alt=""></a>
+            </div> <!-- end sch-box -->
             <div class="location">
                 <ul>
                     <li>홈</li>
@@ -132,8 +143,8 @@
                                 <li>18,274 원</li>
                             </ul> <!-- end total-pr -->
                             <div class="btn-group">
-                                <input class="pop-cart" type="button" value="장바구니">
-                                <input class="pop-buy" type="button" value="구매하기">
+                                <input class="pop-cart" type="button" value="장바구니" onclick="location.href='cart.html'">
+                                <input class="pop-buy" type="button" value="구매하기" onclick="location.href='payment.html'">
                             </div>
                         </div> <!-- end p-option -->
                     </div> <!-- end bg -->

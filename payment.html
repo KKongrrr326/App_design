@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>:: Bitpos ::</title>
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Roboto:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <!-- css -->
+    <link rel="stylesheet" href="css/default.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- jQuery CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- js -->
+    <script src="js/main.js"></script>
+    <script>
+        // $(function () {
+        //     $("#payment .pay-type .method-pay .type-box input").click(function () {
+
+        //         var sel_method_info = $(this).index();
+        //         $("#payment .pay-type .method-pay .type-box input").removeClass("on")
+        //         $("#payment .pay-type .method-pay .type-box input:eq(" + sel_method_info + ")").addClass("on")
+
+        //         $(this).parent().next().find('.type-info').removeClass("show")
+        //         $(this).parent().next().find('.type-info:eq(' + sel_method_info + ')').addClass("show")
+
+
+
+
+        //     });
+        // });
+
+        //결제방법 선택시 
+
+            function buymethod_select(select_idx, buymethod) {
+
+                $("#payment .method-pay .type-box input").removeClass("on");
+                $("#payment .method-pay .type-box input:eq(" + select_idx + ")").addClass("on");
+
+                $("#payment .method-pay .add-info").hide();
+                $("#payment .method-pay .add-info .type-info").hide();
+                if (select_idx < 2) {
+                    $("#payment .method-pay .add-info:eq(0)").show();
+                } else {
+                    $("#payment .method-pay .add-info:eq(1)").show();
+                }
+
+                $(".add-info .type-info:eq(" + select_idx + ")").show();
+
+                $("input[name=buymethod]").val(buymethod);
+
+            }
+
+    </script>
+</head>
+
+<body>
+    <div class="wrap bg">
+        <header class="sub cart-head">
+            <h1>결제하기</h1>
+            <button class="hide-btn" onclick="location.href='shopping_mall.html'"><img src="img/pg_hide_btn.png"
+                    alt=""></button>
+        </header>
+        <div id="payment">
+            <div class="order-list cm-box">
+                <p class="cm-tit">주문상품</p>
+                <div class="order-item">
+                    <div class="item-box">
+                        <div class="item-img"><img src="img/item_img.png" alt=""></div>
+                        <div class="item-info">
+                            <p class="item-nm">비트포스 코인(BPC)</p>
+                            <ul class="option">
+                                <li>비트포스코인(BPC)</li>
+                                <li class="bar">|</li>
+                                <li>수량 : 1개<span class="option-pr">(+0)</span></li>
+                            </ul> <!-- end option -->
+                            <p class="free">무료배송</p>
+                        </div> <!-- end item-info -->
+                    </div> <!-- end item-box -->
+                    <div class="total-pr">
+                        <ul>
+                            <li>상품금액 : </li>
+                            <li><span>10,000</span> 원</li>
+                        </ul>
+                    </div> <!-- end total-pr -->
+                </div> <!-- end order-item -->
+            </div> <!-- end order-list -->
+            <div class="delivery-info cm-box">
+                <p class="cm-tit">배송정보</p>
+                <div class="user-destination">
+                    <div class="info-edit"><input type="button" value="변경"></div>
+                    <div class="addr-box">
+                        <p class="user-nm">홍길동</p>
+                        <p class="user-addr">지구 행복동 천사리 1004-99 번지 cute호</p>
+                        <p class="user-call">010-1234-5678</p>
+                    </div> <!-- end addr-box -->
+                </div> <!-- end user-destination -->
+            </div> <!-- end delivery-info -->
+            <div class="memo cm-box">
+                <p class="cm-tit">배송 메모</p>
+                <div class="memo-sel">
+                    <select name="" id="">
+                        <option value="">배송 메시지를 선택해주세요.</option>
+                        <option value="">배송 전 연락바랍니다.</option>
+                        <option value="">경비실에 맡겨주세요.</option>
+                        <option value="">집 앞에 놔주세요.</option>
+                        <option value="">택배함에 놔주세요.</option>
+                        <option value="">부재시 핸드폰으로 연락주세요.</option>
+                        <option value="">부재시 경비실에 맡겨주세요.</option>
+                        <option value="">부재시 집 앞에 놔주세요.</option>
+                        <option value="">직접입력</option>
+                    </select>
+                </div> <!-- memo-sel -->
+            </div> <!-- end memo -->
+            <div class="pay-price cm-box">
+                <p class="cm-tit">결제금액</p>
+                <div class="receipt">
+                    <div class="pay-list">
+                        <ul>
+                            <li>총 상품금액</li>
+                            <li>10,000원</li>
+                        </ul>
+                        <ul>
+                            <li>배송비</li>
+                            <li>무료배송</li>
+                        </ul>
+                    </div> <!-- end pay-list -->
+                    <div class="total-pay">
+                        <ul>
+                            <li>총 결제금액</li>
+                            <li>10,000 원</li>
+                        </ul>
+                    </div> <!-- end total-pay -->
+                </div> <!-- end receipt -->
+            </div> <!-- end pay-price -->
+            <div class="pay-type cm-box">
+                <input type="hidden" name="buymethod" value="C">
+                <p class="cm-tit">결제수단</p>
+                <div class="method-pay">
+                    <div class="type-box">
+                        <input type="button" onclick="buymethod_select(0,'C')" value="신용카드">
+                        <input type="button" onclick="buymethod_select(1,'T')" value="코인결제">
+                    </div> <!-- end type-box -->   
+                    <div class="add-info">
+                        <div class="type-info">
+                            <p>- 신용카드 결제는 별도의 관리자 확인처리 없이 결제완료 후 수분내로 확인 됩니다.</p>
+                            <p>- 신용카드 결제는 온라인 결제 사고방지를 위하여 10만원 이상 결제 시 공인인증서가 필요합니다.</p>
+                        </div> <!-- end type-info -->
+                        <div class="type-info">
+                            <p>- 코인 선택 :
+                                <select name="" id="">
+                                    <option value="">비트코인</option>
+                                    <option value="">이더리움</option>
+                                    <option value="">비트포스 코인</option>
+                                </select>
+                            </p>
+                            <p>- 보유수량 : 0.00000000 BTC</p>
+                            <p>- 결제금액 : 70월</p>
+                            <p>- 결제코인수량 : 0.00000194 BTC</p>
+                            <p>- 빠져나가는 코인 수량의 경우 코인계열에 따라 전송수수료(가스비)가 추가적으로 발생됩니다.</p>
+                            <p>- 이용자가 많을 경우 네트워크 상태에 따라 결제가 느려질 수 있습니다.</p>
+                        </div> <!-- end type-info -->
+                    </div> <!-- end add-info -->
+                    <div class="type-box">
+                        <input type="button" onclick="buymethod_select(2,'R')" value="실시간 계좌이체">
+                        <input type="button" onclick="buymethod_select(3,'P')" value="포인트 결제">
+                    </div> <!-- end type-box -->
+                    <div class="add-info">
+                        <div class="type-info">
+                            <p>- 주문직후 바로 인터넷 계좌이체가 진행되며, 결제완료 후 수분내로 자동 결제 확인 처리가 진행됩니다.</p>
+                            <p>- 개인재산 보호를 위하여 거래시 공인인증서가 필요합니다.</p>
+                        </div> <!-- end type-info -->
+                        <div class="type-info">
+                            <p>- 포인트 결제는 보유하고 계신 포인트를 이용하여 결제하는 방식입니다.</p>
+                            <p>- <input type="text" name="" id="" value="100" readonly>Point <span>/</span>보유 포인트 :
+                                0</p>
+                        </div> <!-- end type-info -->
+                    </div> <!-- end add-info -->
+                </div> <!-- end methdd-pay-->
+            </div> <!-- end pay-type -->
+            <div class="pay-tos cm-box">
+                <input type="checkbox" name="all-agr" id="all-agr"><label for="all-agr">
+                    <p>모든 약관 동의하기</p>
+                </label>
+                <input type="checkbox" name="sel-agr1" id="sel-agr1"><label for="sel-agr1">
+                    <p>[필수] 개인정보 및 제 3자 제공 동의</p>
+                </label>
+                <input type="checkbox" name="sel-agr2" id="sel-agr2"><label for="sel-agr2">
+                    <p>[필수] 구매조건 화인 및 결제 진행 동의</p>
+                </label>
+            </div> <!-- end pay-tos -->
+            <div class="buy-btn">
+                <input type="button" value="10,000원 결제하기">
+            </div>
+        </div> <!-- end payment -->
+
+    </div> <!-- end wrap -->
+</body>
+
+</html>

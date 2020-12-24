@@ -21,10 +21,14 @@
     <script>
         jQuery(document).ready(function ($) {
 
-                $("header.mu-main .category .cate-head").click(function () {
-                    $("header.mu-main .category .cate-list").toggleClass("show");
+            // slide search-box 
+            $("header .search").click(function () {
+                $("header .sch-box").slideToggle(300);
+            });
 
-                });
+            $("header.mu-main .category .cate-head").click(function () {
+                $("header.mu-main .category .cate-list").toggleClass("show");
+            });
 
         });
     </script>
@@ -33,7 +37,15 @@
 <body>
     <div class="wrap bg">
         <header class="mall-mu mu-main">
-            <a href="#" class="logo"><img src="img/logo_reverse.png" alt=""></a>
+            <div class="top-head">
+                <a class="logo" href="index.html" class="logo"><img src="img/logo_reverse.png" alt=""></a>
+                <button class="search"><img src="img/search_icon.png" alt=""></button>
+                <a class="cart" href="cart.html"><img src="img/cart_icon.png" alt=""></a>
+            </div> <!-- end top-head -->
+            <div class="sch-box">
+                <input type="text" class="width-100" placeholder="찾으시는 상품을 입력해주세요.">
+                <a class="sch-icon" href="#"><img src="img/sch_box_icon.png" alt=""></a>
+            </div> <!-- end sch-box -->
             <h1 class="pg-tit">Shopping Mall</h1>
             <div class="category">
                 <div class="cate-head">

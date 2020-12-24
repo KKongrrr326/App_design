@@ -23,6 +23,42 @@ header.sub .logo {
     transform: translate(-50%, -50%) !important;
     width: 8.5rem; height: 3.5rem;
 }
+header.cart-head {
+    position: relative;
+    height: 5.5rem;
+}
+
+header.cart-head h1 {
+    position: absolute;
+    top: 50%; left: 1.5rem;
+    transform: translateY(-50%);
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+header.cart-head .hide-btn {
+    position: absolute;
+    top: 50%; right: 1.5rem;
+    transform: translateY(-50%);
+}
+/* header : search-box */
+header .sch-box {
+    display: none;
+    position: absolute;
+    width: 100%;
+    background: #121296;
+    padding: 1rem 1.5rem;
+}
+header .sch-box input {
+    border: 1px solid #ddd;
+    padding: 1rem 5rem 1rem 1.5rem;
+    font-size: 1.4rem;
+}
+header .sch-box .sch-icon {
+    position: absolute;
+    top: 50%; right: 3.5rem;
+    transform: translateY(-50%);
+}
 /* mypage sub common */
 header.mp-sub .fixed-head{
     height: 5.5rem;
@@ -138,7 +174,7 @@ header.mu-main .user-area .default-info .user-info p {
 header.mu-main .user-area .default-info .user-info span {
     font-size: 1.4rem;
     font-weight: 300;
-    color: rgba(255, 255, 255, .75);
+    color: #f1f2f3;
 }
 header.mu-main .user-area .logout {
     display: inline-block;
@@ -154,17 +190,7 @@ header.mu-main .user-area .logout input {
     font-size: 1.4rem;
     background: #081b60;
 }
-/* header : mall */
-header.mall-mu {
-    height: 20rem !important;
-    background-size: 100% 100%;
-}
-header.mall-mu .pg-tit {
-    color: #fff;
-    padding: 0 0 0 1.5rem;
-    font-size: 2.4rem;
-    font-weight: 600;
-}
+
 header.mu-main .category {
     margin: 2.8rem 1.5rem;
     background: #fff;
@@ -212,6 +238,39 @@ header.mu-main .category .cate-list ul li {
 header.mu-main .category .cate-list ul li.on {
     color: #0f4dea;
     font-weight: 500;
+}
+/* header : mall */
+header.mall-mu {
+    height: 20rem !important;
+    background-size: 100% 100%;
+}
+header.mall-mu .pg-tit {
+    color: #fff;
+    padding: 0 0 0 1.5rem;
+    font-size: 2.4rem;
+    font-weight: 600;
+}
+header.mall-mu .top-head {
+    position: relative;
+    height: 8rem;
+}
+header.mall-mu .top-head a {
+    position: absolute;
+    top: 50%; 
+    transform: translateY(-50%);
+}
+header.mall-mu .top-head .logo {
+    left: 50%;
+    transform: translate(-50%, -50%) !important;
+}
+
+header.mall-mu .top-head .search {
+    position: absolute;
+    top: 50%; right: 5.5rem;
+    transform: translateY(-50%);
+}
+header.mall-mu .sch-box {
+    top: 6.5rem;
 }
 /* header : wallet */
 header.wallet-mu .category {

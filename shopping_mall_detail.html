@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>:: Bitpos ::</title>
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Roboto:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <!-- css -->
+    <link rel="stylesheet" href="css/default.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- jQuery CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- js -->
+    <script src="js/main.js"></script>
+    <script>
+        jQuery(document).ready(function ($) {
+            $(".fixed-buy-btn .ot-popup .hide-btn").click(function () {
+                $(".fixed-buy-btn .ot-popup").addClass("hide");
+            });
+            $(".fixed-buy-btn .buy-btn").click(function () {
+                $(".fixed-buy-btn .ot-popup").removeClass("hide");
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div class="wrap">
+        <header class="sub">
+            <div class="fixed-head">
+                <a class="back" href="shopping_mall.html"><img src="img/back_icon.png" alt=""></a>
+                <a class="logo" href="index.html"><img src="img/logo_reverse.png" alt=""></a>
+                <a class="search" href="#"><img src="img/search_icon.png" alt=""></a>
+                <a class="cart" href="#"><img src="img/cart_icon.png" alt=""></a>
+            </div> <!-- end fixed-head -->
+            <div class="location">
+                <ul>
+                    <li>홈</li>
+                    <li class="arrow"><img src="img/arrow_icon.png" alt=""></li>
+                    <li>비트포스 코인</li>
+                </ul>
+            </div> <!-- end location -->
+        </header>
+        <div id="mall" class="detail">
+            <div class="item-thum">
+                <div class="thum-img">
+                    <img src="img/item_img.png" alt="">
+                </div>
+                <div class="item-info">
+                    <p class="item-nm">비트포스 코인 (BTC)</p>
+                    <p class="item-pr">10,000원 <span class="free">무료배송</span></p>
+                </div>
+            </div> <!-- end item-thum -->
+            <div class="add-info">
+                <ul>
+                    <li>제조사</li>
+                    <li>에코그린</li>
+                </ul>
+                <ul>
+                    <li>원산지</li>
+                    <li>국내산</li>
+                </ul>
+            </div> <!-- end add-info -->
+            <div class="p-dt-info">
+                <div class="head">
+                    <p>상품정보</p>
+                </div> <!-- end head -->
+                <div class="dt-img"><img src="img/product_info_img.png" alt=""></div>
+                <div class="p-info-txt">
+                    <p>SmartCop은 스위스에 본사를 둔 유한 책임회사(주식회사)로 지불 토큰인 비트포스코인을 발행하였습니다. 비트포스코인의 주요목적은 쇼핑몰 플랫폼에서 제공하는 제품들에
+                        접근하기 위한 지불 토큰으로 사용되는 것입니다.</p>
+                    <p>SmartCop은 최대 1,000,000,000 비트포스 코인 토큰('총 공급 토큰')을 발행하였습니다.</p>
+                </div> <!-- end p-info-txt -->
+                <div class="info-table">
+                    <ul>
+                        <li>비트포스 코인 총계</li>
+                        <li>1,000,000,000</li>
+                    </ul>
+                    <ul>
+                        <li>약자(Ticker)</li>
+                        <li>BPC</li>
+                    </ul>
+                    <ul>
+                        <li>유형</li>
+                        <li>ERC20</li>
+                    </ul>
+                </div> <!-- end info-table -->
+                <div class="contract-addr">
+                    <p class="tit">컨트랙스 주소</p>
+                    <div class="addr-box">
+                        <p>0xff26fb572cab1f8ff7edc3930e07c0e84eaa3e55</p>
+                    </div>
+                </div> <!-- end contract-addr -->
+            </div> <!-- end p-dt-info -->
+            <div class="fixed-buy-btn">
+                <input class="buy-btn" type="button" value="구매하기">
+                <div class="ot-popup hide">
+                    <div class="bg">
+                        <div class="hide-btn"><img src="img/popup_hide.png" alt=""></div>
+                        <div class="p-option">
+                            <div class="ot-sel">
+                                <p>옵션 선택</p>
+                                <select name="" id="">
+                                    <option value="">옵션을 선택해주세요.</option>
+                                    <option value="">option-one</option>
+                                    <option value="">option-two</option>
+                                    <option value="">option-three</option>
+                                </select>
+                            </div> <!-- end option-sel -->
+                            <div class="ot-list">
+                                <div class="ot-unit">
+                                    <p>옵션 : option-one</p>
+                                    <div class="unit-box">
+                                        <button class="minus-btn"><img src="img/minus_btn.png" alt=""></button>
+                                        <span>1</span>
+                                        <button class="plus-btn"><img src="img/plus_btn.png" alt=""></button>
+                                    </div> <!-- end unit-box -->
+                                </div> <!-- end ot-unit -->
+                                <div class="unit-pr">
+                                    <p>+ 18,724 원</p>
+                                    <button class="delete-btn"><img src="img/delete_btn.png" alt=""></button>
+                                </div> <!-- end unit-pr -->
+                            </div> <!-- end ot-list -->
+                            <ul class="total-pr">
+                                <li>상품합계</li>
+                                <li>18,274 원</li>
+                            </ul> <!-- end total-pr -->
+                            <div class="btn-group">
+                                <input class="pop-cart" type="button" value="장바구니">
+                                <input class="pop-buy" type="button" value="구매하기">
+                            </div>
+                        </div> <!-- end p-option -->
+                    </div> <!-- end bg -->
+                </div> <!-- end ot-popup -->
+            </div> <!-- end fixed-buy-btn -->
+        </div> <!-- end mall -->
+        <footer>
+            <ul>
+                <li><a href="shopping_mall.html"><img src="img/mall_icon.png" alt=""></a></li>
+                <li><a href="wallet.html"><img src="img/wallet_icon.png" alt=""></a></li>
+                <li class="home-menu"><a href="index.html"><img src="img/home_icon.png" alt=""></a></li>
+                <li><a href="charge_shop.html"><img src="img/charge_icon.png" alt=""></a></li>
+                <li><a href="mypage.html"><img src="img/mypage_icon.png" alt=""></a></li>
+            </ul>
+        </footer>
+    </div> <!-- end wrap -->
+</body>
+
+</html>

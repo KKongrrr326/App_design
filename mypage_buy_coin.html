@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>:: Bitpos ::</title>
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Roboto:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <!-- css -->
+    <link rel="stylesheet" href="css/default.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- jQuery CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- js -->
+    <script src="js/main.js"></script>
+    <script>
+        jQuery(document).ready(function ($) {
+
+            $("#mypage .buy-form .coin-cate-mu .head").click(function () {
+                $("#mypage .buy-form .coin-cate-mu .coin-list").slideToggle(300);
+
+            });
+
+        });
+    </script>
+</head>
+
+<body>
+    <div class="wrap">
+        <header class="sub mp-sub">
+            <div class="fixed-head">
+                <a class="back" href="mypage.html"><img src="img/back_icon.png" alt=""></a>
+                <p class="before-pg">설정</p>
+            </div> <!-- end fixed-head -->
+            <div class="mp-common">
+                <h1>코인 구매</h1>
+                <div class="hold-point">
+                    <p class="tit-txt">총 보유 포인트</p>
+                    <p class="total-pt">120,000 <span>point</span></p>
+                </div> <!-- end hold-point -->
+            </div> <!-- end mp-common -->
+        </header>
+        <div id="mypage" class="depth2 content">
+            <div class="buy-form">
+                <div class="coin-cate-mu">
+                    <div class="head">
+                        <p>구매코인 선택</p>
+                    </div><!-- end head -->
+                    <ul class="coin-list">
+                        <li>ETH</li>
+                        <li>BTC</li>
+                        <li>BPC</li>
+                    </ul> <!-- end coin-list -->
+                </div> <!-- end coin-cate-mu -->
+                <div class="form-area">
+                    <div class="ct-box">
+                        <p>구매수량 입력</p>
+                        <div class="inp-box">
+                            <input type="text" class="width-100">
+                            <span>ETH</span>
+                        </div>
+                    </div> <!-- end ct-box -->
+                    <div class="ct-box">
+                        <p>사용 포인트</p>
+                        <div class="inp-box">
+                            <input type="text" class="width-100">
+                            <span>Point</span>
+                        </div>
+                    </div> <!-- end ct-box -->
+                    <div class="ct-box">
+                        <p>패스워드 입력</p>
+                        <div class="inp-box">
+                            <input type="text" class="width-100" placeholder="패스워드를 입력해주세요.">
+                        </div>
+                    </div> <!-- end ct-box -->
+                </div> <!-- end form-area -->
+                <div class="cm-btn">
+                    <input type="button" class="width-100" value="구매하기">
+                </div>
+            </div> <!-- end buy-form -->
+        </div> <!-- end mypage -->
+        <footer>
+            <ul>
+                <li><a href="shopping_mall.html"><img src="img/mall_icon.png" alt=""></a></li>
+                <li><a href="wallet.html"><img src="img/wallet_icon.png" alt=""></a></li>
+                <li class="home-menu"><a href="index.html"><img src="img/home_icon.png" alt=""></a></li>
+                <li><a href="charge_shop.html"><img src="img/charge_icon.png" alt=""></a></li>
+                <li><a href="mypage.html"><img src="img/mypage_icon.png" alt=""></a></li>
+            </ul>
+        </footer>
+    </div> <!-- end wrap -->
+</body>
+
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>:: Bitpos ::</title>
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Roboto:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <!-- css -->
+    <link rel="stylesheet" href="css/default.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- jQuery CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- js -->
+    <script src="js/main.js"></script>
+    <script>
+        jQuery(document).ready(function ($) {
+
+            $("#mypage .buy-form .coin-cate-mu .head").click(function () {
+                $("#mypage .buy-form .coin-cate-mu .coin-list").slideToggle(300);
+
+            });
+
+        });
+    </script>
+</head>
+
+<body>
+    <div class="wrap">
+        <header class="sub wallet-sub">
+            <div class="fixed-head">
+                <a class="back" href="wallet.html"><img src="img/back_icon.png" alt=""></a>
+                <p class="before-pg">내지갑</p>
+            </div> <!-- end fixed-head -->
+            <div class="wt-common">
+                <p class="coin-nm">Bitcoin</p>
+                <p class="coin-pr">0.00000000 <span>BTC</span></p>
+            </div> <!-- end wt-common -->
+        </header>
+        <div id="wallet" class="depth2 content">
+            <div class="qr-code">
+                <div class="qr-copy">
+                    <div class="qr-img"><img src="img/qrcode.png" alt=""></div>
+                <p>bc1qj749t6wuzpk4754ppr2942uvvrrtdjx6evrspl</p>
+                <input type="button" value="복사하기">
+                </div> <!-- end qr-copy -->
+                <div class="btn-group">
+                    <input type="button" value="코인 보내기">
+                    <input type="button" value="기록보기">
+                </div> <!-- end btn-group -->
+            </div> <!-- end qr-code -->
+        </div> <!-- end wallet -->
+        <footer>
+            <ul>
+                <li><a href="shopping_mall.html"><img src="img/mall_icon.png" alt=""></a></li>
+                <li><a href="wallet.html"><img src="img/wallet_icon.png" alt=""></a></li>
+                <li class="home-menu"><a href="index.html"><img src="img/home_icon.png" alt=""></a></li>
+                <li><a href="charge_shop.html"><img src="img/charge_icon.png" alt=""></a></li>
+                <li><a href="mypage.html"><img src="img/mypage_icon.png" alt=""></a></li>
+            </ul>
+        </footer>
+    </div> <!-- end wrap -->
+</body>
+
+</html>

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>:: Bitpos ::</title>
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Roboto:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <!-- css -->
+    <link rel="stylesheet" href="css/default.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- jQuery CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- js -->
+    <script src="js/main.js"></script>
+    <script>
+        jQuery(document).ready(function ($) {
+
+            // header category 
+            $("header.mu-main .category .cate-head").click(function () {
+                $("header.mu-main .category .cate-list").toggleClass("show");
+
+            });
+
+            // content open-menu 
+            $("#wallet .ct-box .op-mu-icon").click(function () {
+                $("#wallet .ct-box .menu-list").toggleClass("show");
+
+            });
+
+        });
+    </script>
+</head>
+
+<body>
+    <div class="wrap">
+        <header class="mu-main wallet-mu">
+            <a href="#" class="logo"><img src="img/logo_reverse.png" alt=""></a>
+            <div class="user-area">
+                <div class="default-info">
+                    <div class="user-icon"><img src="img/user_icon.png" alt=""></div>
+                    <div class="user-info">
+                        <p>User Nickname</p>
+                        <span>821012341234</span>
+                    </div> <!-- end user-info -->
+                </div> <!-- end default-info -->
+                <div class="logout">
+                    <input type="button" value="로그아웃">
+                </div>
+            </div> <!-- end user-area -->
+            <div class="category">
+                <div class="cate-head">
+                    <p>지갑 메뉴</p>
+                </div> <!-- end cate-head -->
+                <div class="cate-list">
+                    <ul>
+                        <li class="on">전체</li>
+                        <li>비트코인</li>
+                        <li>이더리움</li>
+                        <li>비트포스 코인</li>
+                    </ul>
+                </div>
+            </div> <!-- end category -->
+        </header> <!-- end header -->
+        <div id="wallet" class="content">
+            <div class="coin-list">
+                <div class="ct-box">
+                    <div class="coin-wallet">
+                        <p class="coin-nm">Bitcoin</p>
+                        <p class="coin-pr">0.000000 <span>BTC</span></p>
+                    </div> <!-- end coin-wallet -->
+                    <div class="open-menu">
+                        <button class="op-mu-icon"><img src="img/open_menu_icon.png" alt=""></button>
+                        <ul class="menu-list">
+                            <li><a href="wallet_qr_address.html">QR 주소</a></li>
+                            <li><a href="wallet_send.html">보내기</a></li>
+                            <li><a href="wallet_point_conversion.html">포인트 전환</a></li>
+                            <li><a href="#">기록보기</a></li>
+                        </ul> <!-- menu-list -->
+                    </div> <!-- end open-menu -->
+                </div> <!-- end ct-box -->
+                <div class="ct-box">
+                    <div class="coin-wallet">
+                        <p class="coin-nm">Ethereum</p>
+                        <p class="coin-pr">0.000000 <span>ETH</span></p>
+                    </div> <!-- end coin-wallet -->
+                    <div class="open-menu">
+                        <button class="op-mu-icon"><img src="img/open_menu_icon.png" alt=""></button>
+                        <ul class="menu-list">
+                            <li><a href="wallet_qr_address.html">QR 주소</a></li>
+                            <li><a href="wallet_send.html">보내기</a></li>
+                            <li><a href="wallet_point_conversion.html">포인트 전환</a></li>
+                            <li><a href="#">기록보기</a></li>
+                        </ul> <!-- menu-list -->
+                    </div> <!-- end open-menu -->
+                </div> <!-- end ct-box -->
+                <div class="ct-box">
+                    <div class="coin-wallet">
+                        <p class="coin-nm">Bitpos coin</p>
+                        <p class="coin-pr">0.000000 <span>BIT</span></p>
+                    </div> <!-- end coin-wallet -->
+                    <div class="open-menu">
+                        <button class="op-mu-icon"><img src="img/open_menu_icon.png" alt=""></button>
+                        <ul class="menu-list">
+                            <li><a href="wallet_qr_address.html">QR 주소</a></li>
+                            <li><a href="wallet_send.html">보내기</a></li>
+                            <li><a href="wallet_point_conversion.html">포인트 전환</a></li>
+                            <li><a href="#">기록보기</a></li>
+                        </ul> <!-- menu-list -->
+                    </div> <!-- end open-menu -->
+                </div> <!-- end ct-box -->
+                <div class="ct-box">
+                    <div class="coin-wallet">
+                        <p class="coin-nm">Bitcoin</p>
+                        <p class="coin-pr">0.000000 <span>BTC</span></p>
+                    </div> <!-- end coin-wallet -->
+                    <div class="open-menu">
+                        <button class="op-mu-icon"><img src="img/open_menu_icon.png" alt=""></button>
+                        <ul class="menu-list">
+                            <li><a href="wallet_qr_address.html">QR 주소</a></li>
+                            <li><a href="wallet_send.html">보내기</a></li>
+                            <li><a href="wallet_point_conversion.html">포인트 전환</a></li>
+                            <li><a href="#">기록보기</a></li>
+                        </ul> <!-- menu-list -->
+                    </div> <!-- end open-menu -->
+                </div> <!-- end ct-box -->
+            </div> <!-- end coin-list -->
+        </div> <!-- end wallet -->
+        <footer>
+            <ul>
+                <li><a href="shopping_mall.html"><img src="img/mall_icon.png" alt=""></a></li>
+                <li><a href="wallet.html"><img src="img/wallet_icon.png" alt=""></a></li>
+                <li class="home-menu"><a href="index.html"><img src="img/home_icon.png" alt=""></a></li>
+                <li><a href="charge_shop.html"><img src="img/charge_icon.png" alt=""></a></li>
+                <li><a href="mypage.html"><img src="img/mypage_icon.png" alt=""></a></li>
+            </ul>
+        </footer>
+    </div> <!-- end wrap -->
+</body>
+
+</html>

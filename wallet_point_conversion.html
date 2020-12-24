@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>:: Bitpos ::</title>
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Roboto:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <!-- css -->
+    <link rel="stylesheet" href="css/default.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- jQuery CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- js -->
+    <script src="js/main.js"></script>
+    <script>
+        jQuery(document).ready(function ($) {
+
+            $("#wallet .coin-send .ct-box .speed input").click(function () {
+
+                $("#wallet .coin-send .ct-box .speed ul li p").removeClass("on");
+                $(this).next().children().addClass("on");
+
+            });
+
+        });
+    </script>
+</head>
+
+<body>
+    <div class="wrap">
+        <header class="sub wallet-sub">
+            <div class="fixed-head">
+                <a class="back" href="wallet.html"><img src="img/back_icon.png" alt=""></a>
+                <p class="before-pg">내지갑</p>
+            </div> <!-- end fixed-head -->
+            <div class="wt-common">
+                <p class="coin-nm">Bitcoin</p>
+                <p class="coin-pr">0.00000000 <span>BTC</span></p>
+            </div> <!-- end wt-common -->
+        </header>
+        <div id="wallet" class="depth2 content">
+            <div class="pt-conv">
+                <div class="ct-box">
+                    <p class="tit">포인트 전환 사이트</p>
+                    <select name="" id="">
+                        <option value="">전환 사이트 선택</option>
+                        <option value="">아질로원 쇼핑몰</option>  
+                    </select>
+                </div> <!-- end ct-box -->
+                <div class="ct-box">
+                    <span>사이트 회원 정보 입력</span>
+                    <p class="tit">전환 사이트 아이디</p>
+                        <input type="text" style="margin-bottom: 1rem;" class="width-100" placeholder="해당 사이트의 아이디를 입력해주세요.">
+
+                    <p class="tit">패스워드 입력</p>
+                        <input type="text" class="width-100" placeholder="패스워드를 입력해주세요.">
+                </div> <!-- end ct-box -->
+                <div class="ct-box">
+                    <p class="tit">전환 할 포인트 수량</p>
+                    <input type="text" class="width-100" placeholder="전환 포인트 수량을 입력해주세요.">
+                </div>
+                <div class="cm-btn">
+                    <input type="button" class="width-100" value="포인트 전환">
+                </div>
+            </div> <!-- end pt-conv -->
+        </div> <!-- end wallet -->
+        <footer>
+            <ul>
+                <li><a href="shopping_mall.html"><img src="img/mall_icon.png" alt=""></a></li>
+                <li><a href="wallet.html"><img src="img/wallet_icon.png" alt=""></a></li>
+                <li class="home-menu"><a href="index.html"><img src="img/home_icon.png" alt=""></a></li>
+                <li><a href="charge_shop.html"><img src="img/charge_icon.png" alt=""></a></li>
+                <li><a href="mypage.html"><img src="img/mypage_icon.png" alt=""></a></li>
+            </ul>
+        </footer>
+    </div> <!-- end wrap -->
+</body>
+
+</html>

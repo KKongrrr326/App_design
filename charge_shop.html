@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>:: Bitpos ::</title>
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Roboto:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <!-- css -->
+    <link rel="stylesheet" href="css/default.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- jQuery CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- js -->
+    <script src="js/main.js"></script>
+    <script>
+        jQuery(document).ready(function ($) {
+
+                $("#charge-shop .content .ct-box .payment-type input").click(function () {
+
+                    var payment_sel = $(this).index();
+                    $("#charge-shop .content .ct-box .payment-type input").removeClass("on");
+                    $("#charge-shop .content .ct-box .payment-type input:eq(" + payment_sel + ")").addClass("on");
+
+                });
+
+        });
+    </script>
+</head>
+
+<body>
+    <div class="wrap">
+        <header class="mu-main">
+            <a href="#" class="logo"><img src="img/logo_reverse.png" alt=""></a>
+            <div class="p-charge">
+                <p>포인트 충전 금액</p>
+                <input type="text" class="width-100" placeholder="충전할 금액을 입력해주세요.">
+            </div> <!-- end p-charge -->
+        </header> <!-- end header -->
+        <div id="charge-shop">
+            <div class="content">
+                <div class="ct-box">
+                    <p class="ct-tit">결제 방법</p>
+                    <div class="payment-type">
+                        <input type="button" value="신용카드" class="on">
+                        <input type="button" value="계좌이체">
+                    </div>
+                </div> <!-- end ct-box -->
+                <div class="cm-btn">
+                    <input type="button" class="width-100" value="코인보내기">
+                </div> <!-- end cm-btn -->
+            </div> <!-- end content -->
+        </div> <!-- end charge-shop -->
+        <footer>
+            <ul>
+                <li><a href="shopping_mall.html"><img src="img/mall_icon.png" alt=""></a></li>
+                <li><a href="wallet.html"><img src="img/wallet_icon.png" alt=""></a></li>
+                <li class="home-menu"><a href="index.html"><img src="img/home_icon.png" alt=""></a></li>
+                <li><a href="charge_shop.html"><img src="img/charge_icon.png" alt=""></a></li>
+                <li><a href="mypage.html"><img src="img/mypage_icon.png" alt=""></a></li>
+            </ul>
+        </footer>
+    </div> <!-- end wrap -->
+</body>
+
+</html>

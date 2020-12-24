@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>:: Bitpos ::</title>
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Roboto:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <!-- css -->
+    <link rel="stylesheet" href="css/default.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- jQuery CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- js -->
+    <script src="js/main.js"></script>
+    <script>
+        jQuery(document).ready(function ($) {
+
+            $("#wallet .coin-send .ct-box .speed input").click(function () {
+
+                $("#wallet .coin-send .ct-box .speed ul li p").removeClass("on");
+                $(this).next().children().addClass("on");
+
+            });
+
+        });
+    </script>
+</head>
+
+<body>
+    <div class="wrap">
+        <header class="sub wallet-sub">
+            <div class="fixed-head">
+                <a class="back" href="wallet.html"><img src="img/back_icon.png" alt=""></a>
+                <p class="before-pg">내지갑</p>
+            </div> <!-- end fixed-head -->
+            <div class="wt-common">
+                <p class="coin-nm">Bitcoin</p>
+                <p class="coin-pr">0.00000000 <span>BTC</span></p>
+            </div> <!-- end wt-common -->
+        </header>
+        <div id="wallet" class="depth2 content">
+            <div class="coin-send">
+                <div class="ct-box">
+                    <div class="speed">
+                        <p class="tit">전송 속도</p>
+                        <ul>
+                            <li>
+                                <input type="radio" name="tr-speed" id="lowest"><label for="lowest">
+                                    <p>최저</p>
+                                </label>
+                            </li>
+                            <li>
+                                <input type="radio" name="tr-speed" id="usually" checked><label for="usually">
+                                    <p class="on">보통</p>
+                                </label>
+                            </li>
+                            <li>
+                                <input type="radio" name="tr-speed" id="best"><label for="best">
+                                    <p>최고</p>
+                                </label>
+                            </li>
+                        </ul>
+                    </div> <!-- end speed -->
+                    <div class="inner-ct">
+                        <p class="head">수량 입력</p>
+                        <div class="inp-box">
+                            <input type="text" width="100%" placeholder="보낼 수량을 입력해주세요.">
+                            <span>수수료 0.001 BTC</span>
+                        </div>
+                    </div> <!-- end inner-ct -->
+                </div> <!-- end ct-box -->
+                <div class="ct-box">
+                    <p class="tit">보낼 주소</p>
+                    <div class="inp-box">
+                        <input type="text" width="100%" placeholder="보낼 주소를 입력해주세요.">
+                    </div>
+                </div> <!-- end ct-box -->
+                <div class="ct-box">
+                    <p class="tit">패스워드 입력</p>
+                    <div class="inp-box">
+                        <input type="text" width="100%" placeholder="패스워드를 입력해주세요.">
+                    </div>
+                </div> <!-- end ct-box -->
+                <div class="cm-btn">
+                    <input type="button" class="width-100" value="코인 보내기">
+                </div>
+            </div> <!-- end coin-send -->
+        </div> <!-- end wallet -->
+        <footer>
+            <ul>
+                <li><a href="shopping_mall.html"><img src="img/mall_icon.png" alt=""></a></li>
+                <li><a href="wallet.html"><img src="img/wallet_icon.png" alt=""></a></li>
+                <li class="home-menu"><a href="index.html"><img src="img/home_icon.png" alt=""></a></li>
+                <li><a href="charge_shop.html"><img src="img/charge_icon.png" alt=""></a></li>
+                <li><a href="mypage.html"><img src="img/mypage_icon.png" alt=""></a></li>
+            </ul>
+        </footer>
+    </div> <!-- end wrap -->
+</body>
+
+</html>

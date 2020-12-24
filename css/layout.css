@@ -1,0 +1,303 @@
+/* layout.css */
+
+header.sub  {
+    padding-bottom: 2rem;
+    background: #121296;
+}
+header .fixed-head {
+    position: relative;
+    height: 8rem; 
+}
+header.sub .fixed-head {
+    height: 6rem;
+}
+header .fixed-head a{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: inline-block;
+    width: 2.5rem; height: 2.5rem;
+}
+header.sub .logo {
+    left: 50%;
+    transform: translate(-50%, -50%) !important;
+    width: 8.5rem; height: 3.5rem;
+}
+/* mypage sub common */
+header.mp-sub .fixed-head{
+    height: 5.5rem;
+}
+header.sub .fixed-head .before-pg {
+    color: #fff;
+    font-size: 1.4rem;
+    position: absolute;
+    top: 50%; left: 4.5rem;
+    transform: translateY(-50%);
+}
+header.sub .mp-common {
+    text-align: center;
+}
+header.sub .mp-common h1 {
+    font-size: 1.7rem;
+    font-weight: 500;
+    color: #fff;
+    margin-bottom: 1.5rem;
+}
+header.sub .mp-common p {
+    color: rgba(255, 255, 255, .85);
+    font-size: 1.3rem;
+    padding-bottom: .5rem;
+}
+header.sub .mp-common .hold-point {
+    background: rgba(0,0,0,.3);
+    text-align: center;
+    padding: 1.75rem 0;
+}
+
+header.sub .mp-common .hold-point .tit-txt {
+    color: #f1f2f3;
+    font-size: 1.4rem;
+    padding-bottom: .75rem;
+}
+header.sub .mp-common .hold-point .total-pt {
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.7rem;
+}
+header.sub .mp-common .hold-point .total-pt span {
+    font-weight: 300;
+    font-size: 1.3rem;
+}
+header .back {
+    left: 1.5rem;
+}
+header .cart {
+    right: 1.5rem;
+}
+header .search {
+    right: 4.75rem;
+}
+header .location {
+    background: rgba(0, 0, 0, .4);
+    text-align: center;
+    padding: .5rem 0;
+    margin: 0 1.5rem;
+    border-radius: .6rem;
+}
+header .location ul li {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 1.3rem;
+    color: #f1f2f3;
+    font-weight: 300;
+}
+header .location .arrow {
+    margin: .5rem;
+}
+header .location .arrow img {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/* menu main common */
+header.mu-main {
+    background-image: url("../img/head_bg.png");
+    height: 21rem;
+    position: relative;
+}
+header.mu-main .logo {
+    display: block;
+    text-align: center;
+    padding: 2.5rem 0;
+}
+/* header : mypage */
+header.mu-main .user-area {
+    font-size: 0;
+    padding: 0 1.5rem;
+}
+header.mu-main .user-area .default-info {
+    display: inline-block;
+    vertical-align: middle;
+    width: calc(100% - 10rem);
+    padding-right: 1rem;
+}
+header.mu-main .user-area .default-info .user-icon {
+    display: inline-block;
+    vertical-align: middle;
+}
+header.mu-main .user-area .default-info .user-info {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: .75rem;
+}
+header.mu-main .user-area .default-info .user-info p {
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: #fff;
+}
+header.mu-main .user-area .default-info .user-info span {
+    font-size: 1.4rem;
+    font-weight: 300;
+    color: rgba(255, 255, 255, .75);
+}
+header.mu-main .user-area .logout {
+    display: inline-block;
+    vertical-align: middle;
+    width: 10rem;
+}
+header.mu-main .user-area .logout input {
+    width: 100%;
+    padding: 1rem 0;
+    border-radius: 1.8rem;
+    border: none;
+    color: #fff;
+    font-size: 1.4rem;
+    background: #081b60;
+}
+/* header : mall */
+header.mall-mu {
+    height: 20rem !important;
+    background-size: 100% 100%;
+}
+header.mall-mu .pg-tit {
+    color: #fff;
+    padding: 0 0 0 1.5rem;
+    font-size: 2.4rem;
+    font-weight: 600;
+}
+header.mu-main .category {
+    margin: 2.8rem 1.5rem;
+    background: #fff;
+    border: 2px solid #080c5e;
+    border-radius: 1.2rem;
+    padding: 1.5rem;
+    z-index: 9;
+    position: relative;
+}
+header.mu-main .category .cate-head {
+    z-index: 88;
+}
+header.mu-main .category .cate-head p {
+    position: relative;
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+header.mu-main .category .cate-head p::after {
+    content: "";
+    display: inline-block;
+    width: 2.4rem; height: 2.4rem;
+    background-image: url("../img/cate_icon.png");
+    position: absolute;
+    top: 50%; right: 0;
+    transform: translateY(-50%);
+}
+header.mu-main .category .cate-list {
+    max-height: 0;
+    overflow: hidden;
+    transition: .3s ease;
+}
+header.mu-main .category .cate-list.show {
+    max-height: 18rem;
+    overflow-y: auto;
+}
+header.mu-main .category .cate-list ul {
+    padding: 1rem;
+}
+header.mu-main .category .cate-list ul li {
+    font-size: 1.5rem;
+    color: #4b4b4b;
+    font-weight: 300;
+    padding: .5rem 0;
+}
+header.mu-main .category .cate-list ul li.on {
+    color: #0f4dea;
+    font-weight: 500;
+}
+/* header : wallet */
+header.wallet-mu .category {
+    border: none;
+    box-shadow: 4px 4px 4px rgba(208,210,211,.2),-4px -4px 8px rgba(208,210,211,.2);
+}
+header.wallet-mu .category .cate-head p::after {
+    background-image: url("../img/menu_icon.png");
+}
+header.sub .wt-common {
+    text-align: center;
+}
+header.sub .wt-common .coin-nm {
+    font-size: 1.6rem;
+    color: rgba(255, 255, 255, .7);
+}
+header.sub .wt-common .coin-pr {
+    font-weight: 600;
+    font-size: 2rem;
+    color: #fff;
+}
+header.sub .wt-common .coin-pr span {
+    font-size: 1.4rem;
+}
+/* header : join */
+header.join-head {
+    background: #1d1dcc;
+}
+header.join-head .bg {
+    background: linear-gradient(to right, #6b73ff, transparent);
+    padding: 2rem 0;
+}
+header.join-head .top-head {
+    height: 4.5rem;
+    position: relative;
+    margin-bottom: 1rem;
+}
+header.join-head .top-head a {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+header.join-head .top-head .logo {
+    left: 1.5rem;
+}
+header.join-head .top-head .hide-btn {
+    right: 1.5rem;
+}
+header.join-head h1 {
+    font-size: 1.8rem;
+    color: #fff;
+    text-align: center;
+    font-weight: 600;
+}
+/* footer */
+footer {
+    position: fixed;
+    bottom: 0; left: 0;
+    background: #fff;
+    width: 100%;
+    height: 6.5rem;
+    box-shadow: 0 -1px 6px 2px rgba(51, 51, 51, .1);
+}
+footer ul {
+    width: 100%;
+    font-size: 0;
+    padding-top: .65rem;
+}
+footer ul li {
+    display: inline-block;
+    width: 20%;
+    text-align: center;
+    vertical-align: middle;
+}
+footer ul .home-menu a {
+    display: inline-block;
+    width: 5rem !important; height: 5rem;
+    background: linear-gradient(to right, #4b84f7, #0f4dea);
+    border-radius: 50%;
+}
+
+footer a {
+    height: 100%;
+    padding-top: .75rem;
+}
+
+footer a img {
+    vertical-align: middle;
+}

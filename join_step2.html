@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>:: Bitpos ::</title>
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <!-- css -->
+    <link rel="stylesheet" href="css/default.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- js -->
+    <script src="js/main.js"></script>
+
+</head>
+<body>
+    <div class="wrap">
+        <header class="join-head">
+            <div class="bg">
+                <div class="top-head">
+                    <a class="logo" href="index.html"><img src="img/logo_reverse.png" alt=""></a>
+                    <a class="hide-btn" href="index.html"><img src="img/pg_hide_btn.png" alt=""></a>
+                </div> <!-- end top-head -->
+                <h1>회원가입</h1>
+            </div> <!-- end bg -->
+        </header> 
+        <div id="join">
+            <div class="content">
+                <div class="ct-box">
+                    <p class="tit">전화번호 확인 <span>(ex.821012345678)</span></p>
+                    <input type="text" class="width-100" placeholder="가입 전화번호를 입력해주세요.">
+                    <div class="state">
+                        <input type="button" value="확인 및 문자 발송">
+                        <span>인증완료</span>
+                    </div> <!-- end state -->
+                </div> <!-- end ct-box -->
+                <div class="ct-box">
+                    <p class="tit">인증문자 입력</p>
+                    <input type="text" class="width-100" placeholder="인증문자를 입력해주세요.">
+                </div> <!-- end ct-box -->
+            </div> <!-- end content -->
+                <div class="btn-group">
+                    <input type="button" value="인증문자 확인" onclick="location.href='join_step3.html'">
+                </div> <!-- end btn-group -->
+        </div> <!-- end join -->
+    </div> <!-- end wrap -->
+</body>
+</html>

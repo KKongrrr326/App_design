@@ -26,6 +26,7 @@ header.sub .logo {
 header.cart-head {
     position: relative;
     height: 5.5rem;
+    padding-bottom: 0;
 }
 
 header.cart-head h1 {
@@ -174,7 +175,7 @@ header.mu-main .user-area .default-info .user-info p {
 header.mu-main .user-area .default-info .user-info span {
     font-size: 1.4rem;
     font-weight: 300;
-    color: #f1f2f3;
+    color: #f1f2f3 !important;
 }
 header.mu-main .user-area .logout {
     display: inline-block;
